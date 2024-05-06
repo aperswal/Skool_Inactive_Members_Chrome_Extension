@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Inactive Members Report",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.skool.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

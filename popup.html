@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inactive Members Report</title>
+  <script src="popup.js" defer></script>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    #instructions {
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      display: block;
+      margin: 10px auto;
+    }
+    button#downloadCSV {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="instructions">
+    <p>To get a list of inactive members, follow these steps:</p>
+    <ol>
+      <li>Navigate to the "Members" tab of your Skool community.</li>
+      <li>Click the "Start Scan" button below.</li>
+    </ol>
+  </div>
+  <button id="startScan">Start Scan</button>
+  <button id="downloadCSV">Download CSV</button>
+</body>
+</html>
